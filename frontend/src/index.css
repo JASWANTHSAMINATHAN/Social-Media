@@ -7,6 +7,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  border: 0;
+  outline: 0;
 }
 
 .icon {
@@ -38,4 +40,198 @@ position: relative;
   top: 0.4rem;
   font-size: 1.7rem;
   color: #666;
+}
+
+
+
+
+/* -------------------signin-signup------------------------------- */
+
+.signin-signup-container {
+  background: #e1f7fb;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+
+.signin-signup-container .child-container {
+  width: 550px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.signin-signup-container .child-container form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 100%;
+  gap: 0.8rem;
+  padding: 0 2%;
+}
+
+.child-container .bag-logo-field {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 20rem;
+}
+
+.child-container img {
+  width: 6rem;
+}
+
+.child-container h1 {
+  font-weight: 500;
+}
+
+.child-container p {
+  color: #555;
+}
+
+.child-container form input,
+button {
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.child-container form
+button {
+  background: #118afc;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.child-container .t-icon {
+  font-size: 8rem;
+  color: var(--color-orange);
+  border: 5px solid #ffd5b3;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+form .password-field {
+  width: 100%;
+}
+
+form .password-field {
+  background: #fff;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+form .password-field input {
+  padding: 1rem 0;
+}
+
+.password-field .icon {
+  font-size: 1.7rem;
+  color: #555;
+  cursor: pointer;
+}
+
+form .other-signin-method {
+  background: #fff;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.other-signin-method .icon {
+  font-size: 1.6rem;
+}
+
+.other-signin-btn {
+  padding: 0;
+  background: transparent;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+
+.passwords-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+
+.form_error-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff !important;
+  background: #fa3451;
+  padding: 5px 1rem;
+  border-radius: 10px;
+}
+
+
+form button {
+  border-radius: 1rem !important;
+  padding: 1rem !important;
+}
+
+
+button.loading {
+  position: relative;
+  pointer-events: none;
+  border-radius: 1rem;
+  background: #118afc;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1.8rem !important;
+  cursor: pointer;
+  text-align: center;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  padding: 0.6rem;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media(max-width:600px) {
+  .signin-signup-container .child-container {
+    width: 100%;
+  }
+}
+
+.Toastify__toast-body {
+  width: 500% !important;
 }

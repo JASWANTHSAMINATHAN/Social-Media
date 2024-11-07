@@ -10,7 +10,7 @@ export default function Charts() {
 
   // Fetch data from API
   useEffect(() => {
-    fetch('http://localhost:5000/fetch-data') // Replace with your actual API endpoint
+    fetch('http://localhost:3000/fetch-data') // Replace with your actual API endpoint
       .then(response => response.json())
       .then(data => setChartData(data))
       .catch(error => console.error('Error fetching data:', error));
